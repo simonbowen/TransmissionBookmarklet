@@ -1,0 +1,27 @@
+{
+    "name": "simonbowen/transmission-remote",
+    "require": {
+        "kleiram/transmission-php": "@stable",
+        "silex/silex": "dev-master",
+        "kriswallsmith/buzz": "dev-master",
+        "marcw/buzz-service-provider": "dev-master",
+        "symfony/dom-crawler": "2.5.*@dev",
+        "symfony/css-selector": "2.5.*@dev",
+        "twig/twig": "dev-master",
+        "jdesrosiers/silex-cors-provider": "dev-master",
+        "symfony/twig-bridge": "~2.3",
+        "tedivm/jshrink": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Simon Bowen",
+            "email": "simon@xiano.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "AbstractInterface": "src"
+        }
+    }
+    
+}

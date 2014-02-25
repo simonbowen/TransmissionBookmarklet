@@ -1,0 +1,13 @@
+(function(){
+	var params="url=" + document.URL;
+	var xhReq=new XMLHttpRequest();
+	xhReq.open("POST", "{{ url('add-torrent') }}", true);
+	xhReq.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhReq.onreadystatechange=function(){
+		if(xhReq.readyState==4){
+			json = JSON.parse(xhReq.responseText);
+			alert(json.name + " Torrent Added");
+		}
+	};
+	xhReq.send(params);
+})();
